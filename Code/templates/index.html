@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0px;
+            paddnig: 0px;
+            border-radius: 0px;
+            text-decoration: none;
+        }
+        body{
+            background-color: #DB5759;
+        }
+        .container{
+            margin-top: 8%;
+            width: 40%;
+            min-width: 300px;
+            margin: auto;
+        }
+        .container h1{
+            text-align: center;
+            font-size: 40px;
+            font-style: serif;
+            padding: 20px;
+        }
+        .row{
+            padding: 10px;
+            text-align: center;
+        }
+        .row input{
+            width: 80%;
+            height: 40px;
+            padding: 5px;
+            font-size: 16px;
+            border: none;
+            border-radius: 15px;
+            align-content: center;
+        }
+        .row select{
+            width: 82%;
+            height: 50px;
+            border-radius: 15px;
+            font-size: 16px;
+            border: none;
+        }
+        .cropname{
+            margin-top: -5%;
+            margin-left: 11%;
+        }
+        .cropname:before{
+            content: ' \002A';
+            color: blueviolet;
+        }
+        .button{
+            padding: 20px;
+            text-align: center;
+        }
+        .button:hover{
+        }
+        .button input{
+            padding: 8px;
+            border: none;
+            border-radius: 10px;
+            font-size: 14px;
+            font-style: oblique;
+            font-weight: 600;
+        }
+        .button input:hover{
+            background-color: grey;
+        }
+
+    </style>
+</head>
+<body>
+	<div class="container">
+		<h1>Fertilizer Analysiser</h1>
+		<form name="search" action="/report" method="post">
+			<div class="row">
+			<input type="number" name="nvalue" placeholder="Nitrogen content in the soil"><br><br>
+		</div>
+		<div class="row">
+			<input type="number" name="pvalue" placeholder="Phosphorous content in the soil"><br><br>
+		</div>
+		<div class="row">
+			<input type="number" name="Kvalue" placeholder="Potassium content in the soil"><br><br>
+		</div>
+		<div class="row">
+			<input type="number" name="sqft" placeholder="Square feet of the land"><br><br></div>
+		<div class="row">
+			<select id="cropname" name="cropname">
+          <option value="Amla">Amla</option>
+          <option value="tomato">Tomato</option>
+          <option value="baby corn">Baby Corn</option>
+          <option value="bajra">Bajra</option>
+          <option value="carrot">Carrot</option>
+          <option value="banana">Banana</option>
+          <option value="beans">Beans</option>
+          <option value="bitter gound">Bitter Gourd</option>
+          <option value="black gram">Black Gram</option>
+          <option value="bottle gound">Bottle Gourd</option>
+          <option value="brinjal">Brinjal</option>
+          <option value="cabbage">Cabbage</option>
+          <option value="castor">Castor</option>
+          <option value="cheak pea">Cheak Pea</option>
+          <option value="chilly">Chilly</option>
+          <option value="cimnamon">Cimnamon</option>
+          <option value="cloves">Cloves</option>
+          <option value="corn">Corn</option>
+          <option value="cotton">Cotton</option>
+          <option value="cow pea">Cow Pea</option>
+          <option value="cucumber">Cucumber</option>
+          <option value="drumstick">Drumstick</option>
+          <option value="french bean">French Bean</option>
+          <option value="Great millet">Great millet</option>
+          <option value="Green Grams">Green Grams</option>
+
+        </select><br><br>
+    </div>
+        <div class="cropname">Crop Name</div>
+     <div class="button">
+     	<input type="submit" name="Submit"></div>
+</form>
+</div>
+
+</body>
+</html>

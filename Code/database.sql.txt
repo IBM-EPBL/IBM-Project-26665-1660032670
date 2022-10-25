@@ -1,0 +1,37 @@
+create database IBM;
+show databases;
+use IBM;
+create table Plants(
+plant_id int,
+plant_name varchar(20),
+nitrogen int,
+phosphorous int,
+potassium int,
+primary key(plant_id));
+
+insert into Plants
+values(1,"Amla",400,400, 250),
+(2,"tomato", 120,100, 50),
+(3,"baby corn", 100,50, 50),
+(4,"bajra",60,30,0),
+(5,"carrot", 120,0, 100),
+(6,"banana",400,150, 0),
+(7,"beans",30,60, 30),
+(8,"bitter gound",120,60, 30),
+(9,"black gram",25,50, 0),
+(10,"bottle gound",100,50, 50),
+(11,"brinjal",150,50, 50),
+(12,"cabbage",120,60, 60),
+(13,"castor",60,40, 0),
+(14,"cheak pea",25,50, 0),
+(15,"chilly",150,50, 50),
+(16,"cimnamon",20,20, 20),
+(17,"cloves",20,20, 50),
+(18,"corn", 120,60, 60),
+(19,"cotton", 80,400, 250),
+(20,"cow pea", 60,50, 50),
+(21,"cucumber", 115,60, 30),
+(22,"drumstick", 75,50, 75),
+(23,"french bean", 660,60, 60),
+(24,"Great millet", 120,60, 60),
+(25,"Green Grams", 39,14.3, 44.4);
